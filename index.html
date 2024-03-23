@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This is where your description goes">
+	<meta name="keywords" content="one, two, three">
+
+	<title>Anime Quotes!</title>
+
+	<!-- external CSS link -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main class="main">
+		<header class="title">
+			<p>Image by <a href="https://www.deviantart.com/ricodz">Rico De Zoysa</a></p>
+			<h1>Random Anime Quote</h1>
+		</header>
+
+		<section>
+			<label for="text">Enter an Anime or Character, or leave blank for a random quote!</label>
+			<input type="text" name="" value="" id="text">
+			<form action="">
+				<input type="radio" name="quote-type" id="character" value="character"> <label for="character">
+					Character</label>
+				<input type="radio" name="quote-type" id="anime" value="anime"> <label for="anime"> Anime</label>
+				<input type="radio" name="quote-type" id="random" value="random" checked> <label for="random">
+					Random</label>
+			</form>
+		</section>
+
+		<section>
+			<button type="button" name="button" id="getQuote" onclick="displayRadioValue()">Get Anime Quotes</button>
+			<button type="button" name="button" id="cycleQuote" onclick="displayRadioValue()">Cycle Through
+				Quotes</button>
+			<button type="button" name="button" id="showAll">Show All Anime</button>
+		</section>
+
+		<article class="Quotes">
+			<h2 class="anime">Anime</h2>
+			<h3 class="character">Character</h3>
+			<blockquote class="quote">Quote</blockquote>
+		</article>
+	</main>
+
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

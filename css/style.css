@@ -1,0 +1,108 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+html {
+  background: #121212;
+  color: #FFFFFF;
+  font-size: 62.5%; 
+  background-image: url(https://images4.alphacoders.com/973/973967.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 80%;
+  padding: 25px;
+  padding-top: 75px;
+  background: rgba(0, 0, 0, .75);
+  border-radius: 25px;
+  box-shadow: 10px 15px 10px purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+section + section {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 20px 0 30px 0;
+  font-size: 1.4rem;
+}
+
+article {
+  height: 500px;
+  overflow: auto;
+  font-size: 1.5rem;
+  width: 75%;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+input[type=radio] {
+  padding: 5px;
+}
+
+input[type=text] {
+  width: 400px;
+  height: 45px;
+  font-size: 2rem;
+}
+
+p, label {
+  font-size: 1.6rem;
+}
+
+h1, h2, h3, blockquote, label, p {
+  text-align: center;
+  margin: 10px 0;
+}
